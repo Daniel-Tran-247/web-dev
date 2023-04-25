@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cloud-based Smart Greenhouse System</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <img src="https://download.logo.wine/logo/Seneca_College/Seneca_College-Logo.wine.png"
+            width ="120px" height="80px" alt="Seneca College Logo">
+            <H1>Cloud-based Smart Greenhouse System</H1>
+            <H3>Seneca King Campus Initiatives</H3>
+            <H5>
+                <p>Completed by: Bao Phuc Tran (141865212)</p>
+                <p>Course Code: TEC400NBQ</p>
+                <p>Guide by: Professor Lisa Schalaich</p>
+                <p>Date: 2023-04-07</p>
+            </H5>
+        </header>
+        <hr>
+        <div id="table-of-contents">
+            <H3>Table of Contents</H3>
+            <ul>
+                <li>I. Abstract</li>
+                <li>II. Introduction</li>
+                <li>
+                    III. Cloud-based System for Smart Greenhouse
+                    <ul>
+                        <li>3.1. Overview of the system</li>
+                        <li>
+                            3.2. Tracking and gathering real time data
+                            <ul>
+                                <li>3.2.1. Environmental Sensors</li>
+                                <li>3.2.2. Camera System</li>
+                            </ul>
+                        </li>
+                        <li>
+                            3.3. Data Tranmission and Communication Protocols
+                            <ul>
+                                <li>3.3.1. Wireless Sensor Network</li>
+                                <li>3.3.2. Some commonly adopted communication protocols in the smart greenhouse</li>
+                                <li>3.3.3. Cyber Physical Security (CPS) Devices</li>
+                            </ul> 
+                        </li>
+                        <li>
+                            3.4. Cloud Computing
+                            <ul>
+                                <li>3.4.1. Amazon Web Services (AWS)</li>
+                                <li>3.4.2. Machine Learning Algorithms</li>
+                            </ul>
+                        </li>
+                        <li>3.5. System Architecture</li>
+                        <li>
+                            3.6. Executing Systems
+                            <ul>
+                                <li>3.6.1. Relays and Contactors</li>
+                                <li>3.6.2. Nutrients Delivery System</li>
+                                <li>3.6.3. Irrigation System</li>
+                                <li>3.6.4. Other Systems</li>
+                            </ul>
+                        </li>
+                        <li>
+                            3.7. User Interface
+                            <ul>
+                                <li>3.7.1. Front-end & Back-end of the App</li>
+                                <li>3.7.2. App Features</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>IV. Conclusion & Recommendation</li>
+                <li>V. References</li>
+            </ul>
+        </div>
+        <hr>
+        <div id="abstract">
+            <h3>I. Abstract</h3>
+            <p>In this academic report, we will focus on the IoT-powered greenhouse system and the benefits of
+                incorporating different networking mechanism in greenhouse farming. We will analyze the system
+                architectures as a whole the role of sensors and actuators in particular, and its impacts on energy
+                conservation and cost reduction. Furthermore, we will explore deeply the implementation of the cloudbased technology on plant growth and the overall management of the greenhouse activities. Ultimately,
+                this report suggests some practical approaches to deploy such systems in the Seneca King Smart
+                Greenhouse initiative. </p>
+        </div>
+        <div id="introduction">
+            <h3>II. Introduction</h3>
+            <p>The world today is facing with the myriads of global issues. One of them, the population explosion,
+                especially in developing countries, become a threat to the food supply security. In addition, traditional
+                agricultural method seems vulnerable when confronting unprecedented weathers that caused by
+                climate change.</p>
+            <p>
+                The rise of technology has led to an increase in innovative and sustainable farming methods, with smart
+                systems at the forefront. One such system is the Cloud-based IoT greenhouse model, which utilizes
+                various technologies such as cloud services and automation that not only provides a controlled climate
+                for effective plant growth but manage and optimize the farming process remotely and effectively. </p>
+        </div>
+        <div id="system">
+            <div id="overview">
+                <h3>III. Cloud-based System for Smart Greenhouse</h3>
+                <h4>3.1. Overview of the System</h4>
+                <p>
+                    IoT network including sensors, actuators, embedded controllers, with the integration of
+                    cloud service and a dedicated app will give the farmers more power to manage their
+                    greenhouse remotely and effectively, to harvest better crops all year.
+                    In the nutshell, the real time data collected from sensors and cameras at the farm are sent
+                    to the cloud server to save in a data warehouse and process for analytic tasks. Users can
+                    easily manage all the systems operating in the greenhouse via an app available across
+                    devices (laptop/phones). It will assist farmers in making faster and better decision on
+                    managing the greenhouse activities and plants development.</p>
+                <figure>
+                    <img src="https://www.abnewswire.com/uploads/bdba2fd004cf25ece4e66826f579b7cc.png" 
+                      width="600px" height="400px" alt="Overview of Smart Greenhouse" >
+                    <figcaption>Figure.1 - Overal of the IoT smart greenhouse system (Hengko, 2023)</figcaption>   
+                </figure>
+                <p>The app offers a main dashboard for users to track the essential environmental parameters 
+                    such as soil moisture, light, temperature, air humidity, and CO2 emission level for any
+                    particular area the greenhouse along with the information of specific plants. With the help
+                    of machine learning algorithm, it can predict the possibilities of disease development on a
+                    plant and recommend steps that should be taken in an hour-basis. Eventually, the final
+                    decision will be sent to the executing devices via network and will be carried out
+                    automatically by actuators (such as turning on/off vent, cooling, heating, irrigation systems,
+                    etc.) to maintain the optimal growing conditions for the plants.</p>
+                </p>                
+            </div>
+            <div id="tracking-data">
+                <h4>3.2. Tracking and Gathering Real-time Data</h4>
+                <div id="sensors">
+                    <h5>3.2.1 Enivronmental sensors</h5>
+                    <p>Monitoring the environmental factors is critical to the growth of a crop. This becomes a
+                        huge advantage for a plant being grown in the greenhouse where all climatic
+                        parameters can be controlled and adjusted precisely customized for each specific plant
+                        type. It avoids unpredicted natural weather conditions that will threat the crop while
+                        allowing plants to grow faster, all year round. There are a number of parameters
+                        important that needs great supervision such as temperature, air humidity, soil moisture,
+                        nutrient level, CO2 level.</p>
+                    <p>   
+                        Each type of sensor requires different installation approaches. For example, a
+                        temperature sensor should be placed at various heights within the greenhouse as
+                        temperature can vary greatly at different heights. This method is suitable for vertical
+                        farming where layers of plants are stacked vertically. Moreover, temperature sensors
+                        are also put near vents or heaters to monitor their effectiveness. Humidity sensors, on
+                        the other hands, are positioned near plants that requires specific humidity. Keep in mind
+                        not to place them near the water sources such as irrigation systems as this can lead to
+                        inaccurate readings. Nutrition sensors can be installed near the root zone where the
+                        majority of the roots are located. All sensors should be dispersed into strategic places to
+                        precisely collect the climatic parameter in different areas of the greenhouse. </p>
+                </div>
+                <div id="camera">
+                    <h5>3.2.2. Camera System</h5>
+                    <p>Images and videos are the other fruitful data sources that can be collected to better
+                        monitor the growth of plants. A camera system is suggested to gather video timestamp
+                        and high-resolution images to detect disease that would probably develop on plants.
+                        Images are then processed to remove any noise or artifacts that may intervene the
+                        analysis. This can involve techniques such as filtering, smoothing, and color protection.
+                        Features that are relevant to disease detection such as color, texture, shape and size
+                        information are extracted from the images. Finally, a classification algorithm will be
+                        used to recognize patterns and features associated with known disease labels. The
+                        power of image processing together with the computer vision technology help timely
+                        identify locations and type of disease that is likely to develop on a plant. “According to a
+                        study, the system used KNN cluster algorithm demonstrated high efficiency in both
+                        monitoring plant growth and detecting diseases, 1.71 times faster than other normal
+                        methods.</p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+header {
+    text-align: center;
+    font-family: 'Arial';
+}
+
+header p {
+    text-align: left;
+}
+
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+h5 {
+    font-size: 15px;
+}
