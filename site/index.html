@@ -7,15 +7,15 @@
 
     <body>
         <header>
-            <img scr="C:\Users\baoph\web-dev\site\
-            Daniel_Tran_Create_a_futuristic_icon_
-            for_your_Discord_server_th_6b368bd3-483f-459b-
-            9c9f-4d5fb3a6c68d.png" height="100px" length="100px">
-            Header element - Some header information goes here. Usually
+            <img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"
+            alt="Logo Icon" height="40px" length="40px">
+            <div>Header element - Some header information goes here. Usually
             consists of company logo, some tag line, etc.
             Sometimes, navigation is contained in the header as well.
+            </div>
             <nav>
-                Usaully contains links to different parts of the web site.                
+                
+                Usually contains links to different parts of the web site.                
             </nav>
         </header>
         <H1 style="color:blue; font-size: 60px; text-align: center;">
@@ -28,19 +28,27 @@
                 <i>"Be &gt; than yesterday self"</i>
             </blockquote> 
         </div>
-        <Section>
-            Section 1
+        <div id="Table-of-Contents">
+            <h4>Table of Contents:</h4>
+            <ol>
+                <li><a href="#section-1">Section 1</a></li>
+                <li><a href="#section-2">Section 2</a></li>
+                <li><a href="#shopping-list">Shopping List</a></li>
+            </ol>
+        </div>
+        <Section id="section-1">
+            <h4>Section 1</h4>
             <article>Article 1</article>
             <article>Article 2</article>
             <article>Article 3</article>
         </Section>
-        <Section>
-            Section 2
+        <Section id="section-2">
+            <h4>Section 2</h4>
             <article>Article 4</article>
             <article>Article 5</article>
             <article>Article 6</article>
         </Section>
-        <div>
+        <div id="shopping-list">
             <p><b>My Shopping List:</b></p>
             <ul>
                 <li>Milk</li>
@@ -60,15 +68,19 @@
         <aside>
             ASIDE - Some information that relates to the main topic,
             i.e., related posts.
+            <div>
+                <a href="#Table-of-Contents">Back to the top</a>
+            </div>
         </aside>
         <footer>
             <hr>
-
-            <p style="color:purple; text-align: center;"
-            onclick="alert('Opening LinkedIn...')">
+            <p style="color:purple; text-align: center;">
                 connect with me: 
-                <a href="https://www.linkedin.com/in/danieltrn">LinkedIn</a>
+                <a onclick="alert('Opening LinkedIn')" 
+                href="https://www.linkedin.com/in/danieltrn" target="_blank"
+                >LinkedIn</a>
             </p>
+            <!--Comment this out!-->
             <p style="font-size: 10px;">Copyright: Daniel Tran 2023&copy; Copyright </p>
         </footer>
     </body>
